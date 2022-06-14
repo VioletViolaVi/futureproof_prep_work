@@ -80,9 +80,22 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Q4.");
 
   // complete the function snakeCase that takes in a word and returns a snake_cased string
-  // the Capital letter will be downcased and preceded by and understore
+  // the Capital letter will be downcased and preceded by and underscore
 
   const snakeCase = (str) => {
+    let newWord = "";
+
+    for (let i = 0; i < str.length; i++) {
+      const char = str[i];
+      if (char === char.toUpperCase()) {
+        newWord += "_" + char.toLowerCase();
+      } else {
+        newWord += char;
+      }
+    }
+
+    const result = newWord;
+
     return result;
   };
 
@@ -93,7 +106,53 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("\n");
   console.log("Q5.");
 
+  // complete the function swap2 that takes in a word and returns an object returning the original string and the swpacased string
+
+  // Complete the function below
+  const swap2 = (word) => {
+    let new_word = "";
+
+    for (let i = 0; i < word.length; i++) {
+      const char = word[i];
+      if (char === char.toUpperCase()) {
+        new_word += char.toLowerCase();
+      } else {
+        new_word += char.toUpperCase();
+      }
+    }
+
+    const objectResult = { original: word, swapcased: new_word };
+    objectResult.swapcased = new_word;
+
+    return objectResult;
+  };
+
+  console.log(swap2("hELLo"));
+  // => { original: 'hELLo', swapcased: 'HellO' }
+  console.log(swap2("betH"));
+  // => { original: 'betH', swapcased: 'BETh' }
+  console.log(swap2("jaGaN"));
+  // => { original: 'jaGaN', swapcased: 'JAgAn' }
+  console.log(swap2("sergI"));
+  // => { original: 'sergI', swapcased: 'SERGi' }
+
   /********************************************************************************************** Q6. */
   console.log("\n");
   console.log("Q6.");
+
+  // complete the function capit2 that takes in a word and returns an object returning the original string and the capitalised string
+
+  // Complete the function below
+  const capit2 = (word) => {
+    return { original: word, capitalised: new_word };
+  };
+
+  console.log(capit2("hELLo"));
+  // => { original: 'hELLo', capitalised: 'Hello' }
+  console.log(capit2("betH"));
+  // => { original: 'betH', capitalised: 'Beth' }
+  console.log(capit2("jaGaN"));
+  // => { original: 'jaGaN', capitalised: 'Jagan' }
+  console.log(capit2("sergI"));
+  // => { original: 'sergI', capitalised: 'Sergi' }
 });
