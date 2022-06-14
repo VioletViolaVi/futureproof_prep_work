@@ -144,6 +144,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Complete the function below
   const capit2 = (word) => {
+    const new_word =
+      word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+
+    const original = word;
+
+    const capitalised = new_word;
+
     return { original: word, capitalised: new_word };
   };
 
