@@ -54,10 +54,21 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Q3.");
 
   // complete the function camelCase that takes in a word and returns a camelCased string
-  // the underscore will be removed and the letter that used to follow the understore will be capitalised
+  // the underscore will be removed and the letter that used to follow the underscore will be capitalised
 
   // Complete the function below
   const camelCase = (str) => {
+    const indexOfCharAfterUnderScore = str.indexOf("_") + 1;
+
+    const cameCased = str.replace(
+      str[indexOfCharAfterUnderScore],
+      str[indexOfCharAfterUnderScore].toUpperCase()
+    );
+
+    const removeUnderScore = cameCased.replace("_", "");
+
+    const result = removeUnderScore;
+
     return result;
   };
 
@@ -67,6 +78,16 @@ document.addEventListener("DOMContentLoaded", () => {
   /********************************************************************************************** Q4. */
   console.log("\n");
   console.log("Q4.");
+
+  // complete the function snakeCase that takes in a word and returns a snake_cased string
+  // the Capital letter will be downcased and preceded by and understore
+
+  const snakeCase = (str) => {
+    return result;
+  };
+
+  console.log(snakeCase("snakeCase")); // => snake_case
+  console.log(snakeCase("aVariable")); // => a_variable
 
   /********************************************************************************************** Q5. */
   console.log("\n");
