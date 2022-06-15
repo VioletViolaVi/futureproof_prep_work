@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /********************************************************************************************** Q1. */
+  console.log("Array:");
   console.log("Q1.");
   // complete the sum function that takes in an array
   // and returns (not console.log) the sum of its elements
@@ -40,4 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ar = [7, 19, 33, -5, -99, 6, 12];
   console.log(avg(ar)); // => -3.86 (number)
+
+  console.log("\n");
 });

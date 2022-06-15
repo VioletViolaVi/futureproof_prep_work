@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /********************************************************************************************** Q1. */
+  console.log("Object:");
   console.log("Q1.");
 
   // write an object that describes you
@@ -135,4 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
   console.log(diffTypes(ar));
   // => { string: 1, array: 1, boolean: 2, object: 1, number: 1 }
+
+  console.log("\n");
 });

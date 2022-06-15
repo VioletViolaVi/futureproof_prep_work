@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /********************************************************************************************** Q1. */
+  console.log("Starter:");
   console.log("Q1.");
 
   // Using the modulo operator
@@ -80,4 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ar = [7, 19, 33, -5, -99, 6, 12];
 
   console.log(howManyOdds(ar)); // => 5
+
+  console.log("\n");
 });

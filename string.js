@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /********************************************************************************************** Q1. */
+  console.log("String:");
   console.log("Q1.");
 
   // complete the function capitalize that takes in a word and returns a capitalised string
@@ -162,4 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // => { original: 'jaGaN', capitalised: 'Jagan' }
   console.log(capit2("sergI"));
   // => { original: 'sergI', capitalised: 'Sergi' }
+
+  console.log("\n");
 });
